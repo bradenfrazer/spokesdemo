@@ -299,7 +299,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 
 .wb-hide-mobile-sidebar .wp-bp-sidebar-width { display: none; }
 
-.navbar-toggler { background-color: #343a40; }
+.navbar-toggler { background-color: #fff; }
 
 .site-header { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
 
@@ -336,7 +336,7 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 .wp-caption .wp-caption-text { font-size: 0.95rem; }
 
 /*--------------------------------------------------------------
-# Theme Overrides
+# Bootstrap Overrides
 --------------------------------------------------------------*/
 
 .btn {
@@ -348,10 +348,26 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
   font-weight: bold;
 }
 
+.jumbotron {
+  background-color: #dd3333;
+}
+
+/*--------------------------------------------------------------
+# Theme Overrides
+--------------------------------------------------------------*/
+
 .widget-area {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+}
+
+.footer-widgets .widget-title {
+  font-weight: bold;
+}
+
+.wp-bp-main-content > .container > .row > .col-md-12 {
+  padding-top: 3rem;
 }
 
 .wp-bp-services-section .custom-html-widget img {

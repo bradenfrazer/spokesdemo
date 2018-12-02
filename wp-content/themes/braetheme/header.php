@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header <?php if ( get_theme_mod( 'sticky_header', 0 ) ) : echo 'sticky-top'; endif; ?>">
 		<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light bg-light">
-			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?><div class="container"><?php endif; ?>
+			<?php if( get_theme_mod( 'header_within_container', 1 ) ) : ?><div class="container"><?php endif; ?>
 				<?php the_custom_logo(); ?>
 
 				<div class="site-branding-text">

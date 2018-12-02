@@ -18,33 +18,36 @@ get_header(); ?>
 	$default_sidebar_position = get_theme_mod( 'default_sidebar_position', 'right' );
 ?>
 
-<?php if ( get_theme_mod( 'blog_display_cover_section', 1 ) ) : ?>
-	<?php if( get_theme_mod( 'blog_cover_title' ) || get_theme_mod( 'blog_cover_lead' ) || get_theme_mod( 'blog_cover_btn_text' ) ) : ?>
-		<section class="jumbotron bg-white text-center wp-bs-4-jumbotron border-bottom">
-			<div class="container">
+<?php
+if ( wp_get_attachment_url( get_post_thumbnail_id($post->ID)) ) : ?>
+	<style type="text/css">
+		.wp-bs-4-jumbotron {
+			background-image: url(<?php echo esc_url( wp_get_attachment_url( get_post_thumbnail_id($post->ID)) ); ?>);
+			background-position: 50% 50%;
+			background-size: cover;
+		}
+		.wp-bp-jumbo-overlay {
+			background: rgba(33,37,41, 0.0);
+		}
+	</style>
+<?php
+endif; ?>
 
-				<h1 class="jumbotron-heading"><?php echo wp_kses_post( get_theme_mod( 'blog_cover_title' ) ); ?></h1>
-				<p class="lead text-muted"><?php echo wp_kses_post( get_theme_mod( 'blog_cover_lead' ) ); ?></p>
-				<?php if( get_theme_mod( 'blog_cover_btn_text' ) ) : ?><a href="<?php echo esc_url( get_theme_mod( 'blog_cover_btn_link' ) ); ?>" class="btn btn-primary"><?php echo esc_html( get_theme_mod( 'blog_cover_btn_text' ) ); ?></a><?php endif; ?>
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /.jumbotron text-center -->
-	<?php endif; ?>
-<?php endif; ?>
+<section class="jumbotron text-center wp-bs-4-jumbotron border-bottom text-white">
+    <div class="wp-bp-jumbo-overlay">
+        <div class="container">
+						<h1 class="jumbotron-heading"><?php the_title(); ?></h1>
+						</div>
+    </div>
+</section>
 
 <section class="wp-bp-main-content">
 <div class="container">
 		<div class="row justify-content-center">
-				<div class="col-md-12">
-
+			<div class="col-md-12">
 					<?php while ( have_posts() ) : the_post(); ?>
-							<h2 class="text-center mb-4"><?php the_title(); ?></h2>
-							<?php wp_bootstrap_4_post_thumbnail(); ?>
 							<?php the_content(); ?>
 					<?php endwhile; ?>
-
-
 			</div>
 			<!-- /.col-md-12 -->
 		</div>

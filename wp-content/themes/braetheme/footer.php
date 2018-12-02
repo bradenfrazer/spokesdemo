@@ -56,7 +56,9 @@
 
 		<div class="container">
 			<div class="site-info">
-				<p> Theme by Braden Frazer | Modified from the
+				<p> Theme by
+					<a href="http://www.bradenfrazer.com"> Braden Frazer </a>
+					 | Modified from the
 					<a href="https://bootstrap-wp.com/">Bootstrap 4 WordPress Theme</a>
 				</p>
 			</div><!-- .site-info -->
