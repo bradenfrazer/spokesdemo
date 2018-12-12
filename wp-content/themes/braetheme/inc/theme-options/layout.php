@@ -29,6 +29,12 @@ WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
 			'property' => 'max-width',
 			'units'    => 'px',
 		),
+
+    array(
+  'element'  => '.navbar',
+  'property' => 'max-width',
+  'units'    => 'px',
+),
 	),
 ) );
 

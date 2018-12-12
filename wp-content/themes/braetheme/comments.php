@@ -84,7 +84,7 @@ if ( post_password_required() ) {
 					'title_reply'          => esc_html__('Leave a Reply', 'wp-bootstrap-4'),
 					'cancel_reply_link'    => esc_html__('Cancel', 'wp-bootstrap-4'),
 					'label_submit'         => esc_html__('Post Comment', 'wp-bootstrap-4'),
-					'class_submit'         => 'submit btn btn-primary comment-submit-btn',
+					'class_submit'         => 'submit btn btn-outline-primary comment-submit-btn',
 					'submit_field'         => '<div class="form-submit w-100 text-center">%1$s %2$s</div>',
 					'cancel_reply_before'  => '<small class="wb-cancel-reply">',
 					'class_form'           => 'comment-form row align-items-center',

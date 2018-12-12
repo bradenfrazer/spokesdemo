@@ -14,26 +14,26 @@ WP_Bootstrap_4_Kirki::add_panel( 'theme_options', array(
 
 WP_Bootstrap_4_Kirki::add_field( 'wp_bootstrap_4_theme', array(
 	'settings' => 'logo_height',
-	'label'    => esc_html__( 'Logo Height (in px)', 'wp-bootstrap-4' ),
+	'label'    => esc_html__( 'Logo Width (in px)', 'wp-bootstrap-4' ),
 	'section'  => 'title_tagline',
 	'type'     => 'number',
 	'priority' => 8,
 	'default'  => 60,
-    'tooltip'  => esc_html__( 'Minimum height 25px & maximum height 200px. Width will be adjusted automatically.', 'wp-bootstrap-4' ),
+    'tooltip'  => esc_html__( 'Minimum width 25px & maximum width 400px. Height will be adjusted automatically.', 'wp-bootstrap-4' ),
     'choices'  => array(
 		'min'  => 25,
-		'max'  => 200,
+		'max'  => 400,
 		'step' => 1,
 	),
     'output'   => array(
         array(
 			'element'  => '.custom-logo',
-			'property' => 'height',
+			'property' => 'width',
 			'units'    => 'px',
 		),
         array(
 			'element'       => '.custom-logo',
-			'property'      => 'width',
+			'property'      => 'height',
             'value_pattern' => 'auto',
 		)
     )

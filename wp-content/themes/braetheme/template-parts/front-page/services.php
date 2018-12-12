@@ -14,7 +14,7 @@ $featured_page_3 = get_post( $featured_page_3_id );
     <section class="wp-bp-services-section bg-white">
         <div class="container">
             <div class="row">
-              
+
               <?php if ( is_active_sidebar( 'services-1' ) ) : ?>
                     <?php dynamic_sidebar( 'services-1' ); ?>
                 </div>

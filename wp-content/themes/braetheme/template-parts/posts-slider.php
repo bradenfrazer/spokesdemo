@@ -43,7 +43,7 @@ $featured_query = new WP_Query( $args );
                         <div class="w-100 text-center mb-4">
                             <h5><?php the_title(); ?></h5>
                             <p><?php echo esc_html( wp_bootstrap_4_get_short_excerpt( 20 ) ); ?></p>
-                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-4' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
+                            <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-outline-primary btn-sm"><?php esc_html_e( 'Continue Reading', 'wp-bootstrap-4' ); ?> <small class="oi oi-chevron-right ml-1"></small></a>
                         </div>
                     </div>
                 </div>
