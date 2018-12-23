@@ -440,11 +440,22 @@ div.wpcf7 input, div.wpcf7 textarea  {
   padding: 1em;
 }
 
-
 div.wpcf7 .wpcf7-submit {
   display: block;
-  border: 0;
   margin: 0 auto;
+	color: #dd3333;
+  border-radius: 0px;
+	padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+	background-color: transparent;
+	border: 3px solid #dd3333;
+}
+
+div.wpcf7 .wpcf7-submit:hover{
+	color: #fff;
+	background-color: #dd3333;
+  border: 3px solid #dd3333;
 }
 
 .widget-area {
@@ -476,6 +487,10 @@ div.wpcf7 .wpcf7-submit {
 
 .wp-bs-4-jumbotron h1 {
   margin-bottom: 0;
+}
+
+.site-footer a:hover {
+  color: #6c757d !important;
 }
 
 /*--------------------------------------------------------------
